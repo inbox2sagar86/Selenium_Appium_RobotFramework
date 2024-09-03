@@ -4,3 +4,9 @@
 testResults/*
 *.logs
 *.log
+pabot_results/
+.pabotsuitenames
+.DS_Store
+*.png
+browserstack.err
+env
