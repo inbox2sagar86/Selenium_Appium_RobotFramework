@@ -1,0 +1,16 @@
+{
+    "Android": {
+      "deviceName": "Realme C11",
+      "appPath": "APP_TESTING\\resources\\WikipediaSample.apk",
+      "platformVersion": "12",
+      "androidAutomationName": "UIAutomator2",
+      "appPackage": "io.appium.android.apis",
+      "appActivity": "new Activity"
+    },
+
+    "iOS": {
+      "mobileName": "iphone 12 mini",
+      "appPath": "APP_TESTING\\resources\\WikipediaSample.apk",
+      "platformVersion": "17.6.2"
+    }
+  }
