@@ -6,8 +6,12 @@ Library    JSONLibrary
 Library    OperatingSystem
 
 *** Variables ***
+${username}    sagarsarkar_G1lZTu
+${accesskey}    4f41ATvqBECgfDGxgNqz
 ${Envionment}    local_Android
+
 ${jsonPath}    ${EXECDIR}/APP_TESTING/resources/local_app_config.json
+${remote_url}    https://${username}:${accesskey}@hub-cloud.browserstack.com/wd/hub
 # ${ANDROID_AUTOMATION_NAME}    UIAutomator2
 # ${ANDROID_APP}                ${CURDIR}/demoapp/ApiDemos-debug.apk
 # ${ANDROID_PLATFORM_NAME}      Android
