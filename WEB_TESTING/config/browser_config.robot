@@ -1,10 +1,10 @@
 *** Settings ***
-Library    Selenium2Library
+Library    SeleniumLibrary
 Library    JSONLibrary
 
 
 *** Variables ***
-${BROWSER}    chrome
+${BROWSER}    browserstack
 ${url}    https://www.google.com/
 # BrowserStack Parameters
 ${os_name}
@@ -26,6 +26,8 @@ Launch Browser
         Open Browser    ${url}    ${BROWSER}
         Log To Console    Edge Browser
     END
+    ######### To run test cases in Browser stack environment
+    ################  browserstack-sdk robot .\WEB_TESTING\test_cases\test_googleHome.robot ############
     IF    $BROWSER == "browserstack"
         open browser    remote_url=http://localhost:4444/wd/hub    url=${url}
         # Log To Console    Br
