@@ -4,7 +4,7 @@ Library    JSONLibrary
 
 
 *** Variables ***
-${BROWSER}    browserstack
+${BROWSER}    chrome
 ${url}    https://www.google.com/
 # BrowserStack Parameters
 ${os_name}

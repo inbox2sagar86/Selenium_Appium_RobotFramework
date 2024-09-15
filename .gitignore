@@ -10,4 +10,3 @@ pabot_results/
 *.png
 browserstack.err
 env
-APP_TESTING/config/bs_config.robot

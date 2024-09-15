@@ -1,0 +1,21 @@
+stages:
+  - Web Testing
+  - Mobile Testing
+
+image: marketsquare/robotframework-browser
+
+run-web-test:
+  stage: Web Testing
+  script:
+    - robot --outputdir reports WEB_TESTING\test_cases\test_googleHome.robot
+  artifacts:
+    paths:
+      - reports
+
+run-mobile-tests:
+    stage: Mobile Testing
+    script:
+        - robot --outputdir reports APP_TESTING\test_cases\runApplication.robot
+    artifacts:
+        paths:
+            - reports
